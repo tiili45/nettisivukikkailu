@@ -1,0 +1,237 @@
+/* Navbar */
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active:hover {
+    transition: 0.2s cubic-bezier(0.6, 1, 1, 1);
+    color: rgb(141, 136, 136);
+}
+
+.mx-keski {
+    margin-left: 250px;
+}
+
+.logo {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+
+.nappi {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    
+}
+
+.nappi:hover {
+    color: rgb(141, 136, 136);
+}
+
+.nappi:focus {
+    color: rgb(141, 136, 136);
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+}
+
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+@media (max-width: 992px) {
+    .nappi {
+        display: none;
+    }
+}
+
+/* Slider */
+
+.karusellikoko {
+    max-height: 600px;
+}
+.bg-vari {
+    transition: background-color 0.5s cubic-bezier(0.6, 1, 1, 1); 
+    background-color: #d3b8ed; 
+}
+
+.bg-lapi {
+    transition: background-color 0.5s cubic-bezier(0.6, 1, 1, 1);
+    background-color: transparent !important;
+}
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+}
+
+.carousel-caption {
+    bottom: 40%;
+}
+
+.carousel-caption h5 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.carousel-caption p {
+    font-size: 40px;
+}
+
+.card {
+    margin-left: 2em;
+    background: white;
+    border-color: black;
+    border-width: 1px;
+}
+
+/* Tuotteet-sivu */
+
+.keski {
+    text-align: center;
+}
+
+.kortti {
+    margin-top: 200px;
+}
+
+.vali {
+    margin-top: 400px;
+}
+
+.navi {
+    margin: 0px;
+    padding: 0px;
+    background-color: #4dc8e9;
+    max-height: 80px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #93e4f7;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1031;
+    border-radius: 3px;
+  }
+
+.dropdown-content a {
+    animation: growDown 300ms ease-in-out forwards;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+    animation: growDown 700ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.dropdown-content a:hover {
+    color: rgb(141, 136, 136);
+}
+
+/*.dropdown-content:hover {
+
+} */
+.nav-item:hover .dropdown-content {
+    display: block;
+  }
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.05)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+  }
+
+.vali2 {
+    margin-top: 50px;
+}
+
+.kuva {
+    overflow: hidden;
+    transition-property: transform;
+}
+
+.spinni {
+    transform: rotate(3000000deg);
+    transition-duration: 100s;
+}
+
+.efekti {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 35px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+    
+@keyframes shine {
+  0% {
+    background-position: 0
+  }
+  60% {
+    background-position: 480px
+  }
+  100% {
+    background-position: 643.5px
+  }
+}  
+
+.formi {
+    max-width: 500px;
+    margin: auto;
+    background-color: #4dc8e9;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.formivali {
+    margin: 10px;
+}
+
+.nappivali {
+    float:right;
+}
+
+.bottom {
+    margin-bottom: 200px;
+}

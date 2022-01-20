@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="omacss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <title>Tuotteet</title>
+</head>
+<body style="background-color: #84b7d1;">
+
+<!--Header alkaa tästä-->
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark navi">
+          <div class="container">
+            <a class="navbar-brand my-3" href="#">
+              <img src="pics/engine/eclogo2.png" alt="" width="80" height="80" class="d-inline-block align-top logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-center"> 
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" aria-current="page" href="tuotteet.html">Tuotteet</a>
+                  <div class="dropdown-content">
+                    <a href="#">Koneet</a>
+                    <a href="#">Työkalut</a>
+                    <a href="#">Ohjelmistot</a>
+                    <a href="#">Järjestelmät</a>
+                    <a href="#">Myllyt</a>
+                  </div>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" href="leipomot.html">Työmaat</a>
+                  <div class="dropdown-content">
+                    <a href="#">Leppävirta</a>
+                    <a href="#">Kanavaara</a>
+                    <a href="#">Leipämaa</a>
+                  </div>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" href="#">Yhteystiedot</a>
+                </li>
+              </ul> 
+            </div>
+            <button class="btn nappi" type="submit">Ota yhteyttä</button>
+          </div>
+        </nav>
+      </header>
+
+<!--Teksti alkaa tästä-->
+    <div>
+    <h1 class="keski efekti">Räätälöidyt ratkaisut ammattitaidolla</h1>
+    </div>
+    <div class="keski vali">
+    <p>Tarjoamme sinulle</p>
+    <ul>
+        <li>Parhaat suunnitelmat</li>
+        <li>Modernit toimintamallit</li>
+        <li>5 vuoden takuun</li>
+        <li>Huikeat yhteistyöverkostot</li>
+    </ul>
+    </div>
+<!-- Kortit on tässä-->
+    <div class="container-lg kortti">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card" style="height: 100%;">
+              <img src="pics/engine/kuva1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height: 100%;">
+              <img src="pics/engine/kuva2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height: 100%;">
+              <img src="pics/engine/kuva3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Pyörä ja siihen liittyvät elementit tässä-->
+    <div class="keski kortti">
+        <h2>Laitetaan teidänkin rattaat pyörimään</h2>
+    </div>
+    <div class="keski vali2">
+        <button class="btn-3" onclick="spin()">Pyöräytä käyntiin</button>
+    </div>
+    <div class="keski vali2">
+        <img class="kuva" src="pics/engine/ratas.png" id="kuvani" width="300" height="300">
+    </div>
+    <div class="keski vali2">
+        <button class="btn-3" onclick="stop()">Pysäytä pentele!</button>
+    </div>
+
+<!--Lomake alkaa tästä -->
+
+    <div class="formi">
+    <h2 class="keski">Lomake</h2>
+    <form id="formi">
+      <div class="row">
+        <div class="col formivali">
+          <input type="text" class="form-control" id="firstNameField" placeholder="First name" required>
+        </div>
+      </div>
+        <div class="row">
+        <div class="col formivali">
+          <input type="text" class="form-control" id="lastNameField" placeholder="Last name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col formivali">
+          <input type="text" class="form-control" id="emailField" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col formivali">
+          <button type="submit" class="btn btn-primary nappivali" id="submitButton">Tallenna</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    <div>
+      <h1 class="keski" id="nappilabel"></h1>
+    </div>
+    <div class="keski bottom">
+      <h1 class="keski" id="ekajasen"></h1>
+      <button type="submit" class="btn btn-secondary" onclick="ihmeNappi()">Katoppa kuka oli eka jäsen!</button>
+    </div>
+
+<!-- Footer alkaa tästä -->
+
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="omajs/header.js"></script>
+<script src="omajs/ratas.js"></script>
+<script src="omajs/form.js"></script>
+</body>
+</html>
